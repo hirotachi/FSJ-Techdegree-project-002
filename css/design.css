@@ -117,3 +117,31 @@ body{
       background-color: #4ba6c3;
       color: #fff;
     }
+
+    #search{
+      padding: 1rem;
+      width: 100%;
+      margin: .5rem;
+      border: 1px solid grey;
+      border-radius: 5px;
+    }
+    @media (min-width: 769px){
+      #search{
+        display: inline-block;
+        width: 20%;
+        float: right;
+      }
+    }
+
+    #search::placeholder{
+      text-transform: capitalize;
+      color: grey;
+    }
+
+    /* clear fix */
+
+    .clearfix:after,.clearfix:before{
+      clear: both;
+      display: table;
+      content: " ";
+    }
